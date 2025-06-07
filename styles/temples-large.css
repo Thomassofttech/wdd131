@@ -10,6 +10,11 @@
 #menu{
       display:none;
   }
+  .hideMe {
+    display: none!important;
+    visibility: hidden;
+  }
+
 }
   
 @media (max-width: 768px){

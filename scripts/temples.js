@@ -8,10 +8,15 @@ document.getElementById('lastModified').textContent = `Last Modified: ${lastModi
 
 // Hamburger Menu Toggle with Icon Switch
 const menuButton = document.getElementById('menu');
-const navMenu = document.getElementById('navMenu');
+const navMenu = document.getElementById('myNav');
+const mobile = document.getElementById('clap');
+
+
+console.log(mobile)
 
 menuButton.addEventListener('click', () => {
   navMenu.classList.toggle('show');
   // Toggle between ☰ and ✕
+  mobile.classList.toggle('hideMe')
   menuButton.textContent = navMenu.classList.contains('show') ? '✕' : '☰';
 });

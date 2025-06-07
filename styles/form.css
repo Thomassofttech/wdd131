@@ -1,0 +1,182 @@
+/* Base Styles */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2980b9;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --border-radius: 4px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #0e0c0c;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: aquamarine;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgb(109, 96, 151);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+/* Rating Styles */
+.rating-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+.rating-container input[type="radio"] {
+    display: none;
+}
+
+.rating-container label {
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.rating-container input[type="radio"]:checked ~ label {
+    color: var(--accent-color);
+}
+
+.rating-container input[type="radio"]:hover ~ label {
+    color: var(--primary-color);
+}
+
+/* Checkbox Styles */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Button Styles */
+input[type="submit"],
+.button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+input[type="submit"]:hover,
+.button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Confirmation Page */
+.confirmation {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#reviewCounter {
+    margin: 20px 0;
+    font-size: 18px;
+    color: var(--dark-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    form, .confirmation {
+        padding: 20px;
+    }
+    
+    .rating-container, .checkbox-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

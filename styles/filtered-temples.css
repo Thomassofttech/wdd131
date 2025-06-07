@@ -17,18 +17,20 @@ footer p {
 }
 
 
-.image{
+#temple-cards{
     display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 1rem;
+  margin-top: 1rem;
   width: 100%;
+
 }
 
-figure img{
+section img{
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-radius: 15px;
 }
 
 figure{
@@ -72,24 +74,13 @@ figcaption{
 header h1{
     color: white;
 }
-#clap {
-    display: none;
-}
- ul{
-    list-style: none;
-    text-align: center;
-    /* background-color: blueviolet; */
-    color: black;
-    
-   
- }
- li a{
-    display: block;
-    padding: 0.5rem;
-     text-decoration: none;
+p{
+font-size: 18px;
+padding: 0px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.hideMe {
-    display: block!important;
+div{
+ border-color: aquamarine;  
+ bor 
 }
-
