@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Connect with local service providers in your neighborhood">
+    <title>Call Your Neighbour | Local Services Marketplace</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/utilities.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="images/company-logo.png" alt="Call Your Neighbour Logo" width="40">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="/login" class="btn btn-outline">Log In</a>
+                <a href="/signup" class="btn btn-primary">Sign Up</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Find trusted services in your neighbourhood</h1>
+                    <p class="lead">Connect with local professionals for all your needs</p>
+                    <form class="search-form">
+                        <input type="text" placeholder="What service do you need?" aria-label="Search for services">
+                        <input type="text" placeholder="Your location" aria-label="Your location">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </div>
+                <div class="hero-image">
+                    <img src="images/carp2.jpg" alt="People working together in a community" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section services">
+            <div class="container">
+                <h2>Popular Services</h2>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <img src="images/plumb3.jpg" alt="Home repair icon" loading="lazy">
+                        </div>
+                        <h3>Home Repairs</h3>
+                        <p>Find local handymen for all your home maintenance needs</p>
+                        <a href="/services/home-repairs" class="btn btn-text">Browse Providers</a>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <img src="images/webd.jpg" alt="Tutoring icon" loading="lazy">
+                        </div>
+                        <h3>Tutoring</h3>
+                        <p>Get academic help from qualified tutors in your area</p>
+                        <a href="/services/tutoring" class="btn btn-text">Browse Providers</a>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <img src="images/webd2.jpg" alt="Web development icon" loading="lazy">
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Professional websites to learn web development</p>
+                        <a href="https://www.w3schools.com" class="btn btn-text">Browse Providers</a>
+                    </article>
+                    
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <img src="images/fash4.jpg" alt="Fashion icon" loading="lazy">
+                        </div>
+                        <h3>Fashion Design</h3>
+                        <p>Custom clothing and alterations by local designers</p>
+                        <a href="/services/fashion-design" class="btn btn-text">Browse Providers</a>
+                    </article>
+                </div>
+                <div class="text-center">
+                    <a href="/services" class="btn btn-secondary">View All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="section how-it-works bg-light">
+            <div class="container">
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Find a Service</h3>
+                        <p>Search for the service you need in your local area</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Connect</h3>
+                        <p>Message providers directly through our secure platform</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Get Help</h3>
+                        <p>Agree on terms and get your service completed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="about-content">
+                    <h2>About Our Community</h2>
+                    <p>Call Your Neighbour was created to strengthen local communities by making it easy to find and offer services within your neighborhood.</p>
+                    <p>We believe in supporting local talent and making community connections more accessible to everyone.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">1,250+</span>
+                            <span class="stat-label">Local Providers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">85+</span>
+                            <span class="stat-label">Service Categories</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Satisfaction Rate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/webd2.jpg" alt="Community members working together" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact bg-light">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <address>
+                            <p><i class="icon icon-location"></i>No. 100 Apo Resettlement, Abuja -FCT</p>
+                            <p><i class="icon icon-phone"></i> +234 7082398763</p>
+                            <p><i class="icon icon-email"></i> hello@callyourneighbour.org</p>
+                        </address>
+                        <div class="social-links">
+                            <a href="facebook.com"aria-label="Facebook"><img src="images/facebook.webp" alt="our social link"><i class="icon icon-facebook"></i></a>
+                            <a href="instagram.com" aria-label="Twitter"><img src="images/twitter.webp" alt="twitter"><i class="icon icon-twitter"></i></a>
+                            <a href="twitter.com" aria-label="Instagram"><img src="images/instagram.webp" alt=""><i class="icon icon-instagram"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="/" class="logo">
+                        <img src="images/company-logo.png" alt="Call Your Neighbour Logo" width="30">
+                    </a>
+                    <p>Connecting communities through local services</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="/services/home-repairs">Home Repairs</a></li>
+                        <li><a href="/services/tutoring">Tutoring</a></li>
+                        <li><a href="/services/web-development">Web Development</a></li>
+                        <li><a href="/services/fashion-design">Fashion Design</a></li>
+                        <li><a href="/services">View All</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="legal-links">
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/terms">Terms of Service</a>
+                </div>
+                <h3>Our Social Links</h3>
+                 <nav class="sociallinks">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.webp" alt="facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.webp" alt="twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.webp" alt="instagram">
+            </a>
+        </nav>
+                 <p> 
+      &copy;<span id="currentyear"></span> | Thomas Moses 🖤| Abuja Nigeria ✔
+    </p>
+    <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
