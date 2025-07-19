@@ -10,7 +10,6 @@ const products = [
     { id: 'prod008', name: 'Ergonomic Office Chair' },
     { id: 'prod009', name: 'Air Purifier Pro' },
     { id: 'prod010', name: 'Electric Kettle Smart' }
-    { id: 'prod011', name: 'Iphone Promax'}
 ];
 
 // Function to populate product dropdown
